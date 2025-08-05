@@ -1,0 +1,54 @@
+cartpole1:
+  env_id: CartPole-v1
+  replay_memory_size: 100000
+  mini_batch_size: 64
+  epsilon_init: 1
+  epsilon_decay: 0.9995
+  epsilon_min: 0.01
+  network_sync_rate: 100
+  learning_rate: 0.001
+  discount_factor: 0.99
+  stop_on_reward_min: -99999999999
+  stop_on_reward_max: 100000
+  fc1_nodes: 128
+flappybird1:
+  env_id: FlappyBird-v0
+  replay_memory_size: 100000
+  mini_batch_size: 32
+  epsilon_init: 1
+  epsilon_decay: 0.99_99_5
+  epsilon_min: 0.05
+  network_sync_rate: 10
+  learning_rate: 0.0001
+  discount_factor: 0.99
+  stop_on_reward_min: -99999999999
+  stop_on_reward_max: 100000
+  fc1_nodes: 512
+  env_make_params:
+    use_lidar: False
+acrobot1:
+  env_id: Acrobot-v1
+  replay_memory_size: 100000
+  mini_batch_size: 32
+  epsilon_init: 1
+  epsilon_decay: 0.9995
+  epsilon_min: 0.01
+  network_sync_rate: 10
+  learning_rate: 0.001
+  discount_factor: 0.99
+  stop_on_reward_max: 100000
+  stop_on_reward_min: -999999999
+  fc1_nodes: 128
+mountaincar1:
+  env_id: MountainCar-v0
+  replay_memory_size: 100000
+  mini_batch_size: 32
+  epsilon_init: 1
+  epsilon_decay: 0.9999
+  epsilon_min: 0.01
+  network_sync_rate: 10
+  learning_rate: 0.01
+  discount_factor: 0.99
+  stop_on_reward_max: 100000
+  stop_on_reward_min: -999999999
+  fc1_nodes: 128
